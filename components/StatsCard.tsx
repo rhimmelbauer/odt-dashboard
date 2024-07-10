@@ -20,7 +20,7 @@ const StatsCard = ({
                     <h6 className="text-sm">{title}</h6>
                     <div className="text-sm">{unit}</div>
                 </div>
-                <div className="text-2xl font-bold mt-3">{value}</div>
+                <div className="text-2xl font-bold mt-3">{unit === "$"? "$": ""}{value}</div>
                 <p className="text-xs text-muted-foreground">{note}</p>
             </CardContent>
         </Card >
